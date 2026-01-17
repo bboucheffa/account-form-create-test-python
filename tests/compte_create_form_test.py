@@ -75,7 +75,6 @@ def test_man_with_condition(driver):
     driver.find_element(By.ID, "phone-84d9").send_keys(client["phone"])
     driver.find_element(By.ID, "address-be2d").send_keys(client["adresse"])
     driver.find_element(By.ID, "message-c6a3").send_keys(client["message"])
-
     pays = select_pays.first_selected_option.text
     genre_value = genre.get_attribute("value")
 
