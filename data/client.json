@@ -1,18 +1,18 @@
 {
   "Client1": {
-    "email": "kamel@gmail.com",
-    "name": "kamel",
-    "phone": "0605040302",
-    "adresse": "20 aveue marechal juin",
-    "message": "Hello, je suis kameeeel !"
-  },
-
-  "Client2": {
     "email": "rezak@gmail.com",
     "name": "rezak",
     "phone": "0605040302",
-    "adresse": "20 rue  medecin",
+    "adresse": "20 aveue marechal juin",
     "message": "Hello, je suis rezaaaaak !"
+  },
+
+  "Client2": {
+    "email": "leticia@gmail.com",
+    "name": "liti",
+    "phone": "0605040302",
+    "adresse": "20 rue  medecin",
+    "message": "Hello, je suis liticia !"
   },
 
   "Client3": {

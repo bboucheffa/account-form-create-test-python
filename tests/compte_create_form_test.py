@@ -33,3 +33,27 @@ def test_homme(driver):
 
     driver.find_element(By.CSS_SELECTOR, "form a").click()
 
+def test_femme(driver):
+    client = read_data.read_Client("Client2")
+    wait = WebDriverWait(driver, 50)
+
+    driver.get(URL)
+
+    driver.find_element(By.ID, "field-aa6c").click()
+    Select(driver.find_element(By.ID, "select-9648")).select_by_value("ES")
+
+    driver.find_element(By.ID, "email-c6a3").send_keys(client["email"])
+    driver.find_element(By.ID, "name-c6a3").send_keys(client["name"])
+    driver.find_element(By.ID, "phone-84d9").send_keys(client["phone"])
+    driver.find_element(By.ID, "address-be2d").send_keys(client["adresse"])
+    driver.find_element(By.ID, "message-c6a3").send_keys(client["message"])
+
+    Select(driver.find_element(By.ID, "select-c283")).select_by_value("car")
+
+    driver.execute_script(
+        "arguments[0].scrollIntoView(true);",
+        driver.find_element(By.ID, "checkbox-1848")
+    )
+    driver.find_element(By.ID, "checkbox-1848").click()
+
+    driver.find_element(By.XPATH, "//form/div[12]/a").click()
