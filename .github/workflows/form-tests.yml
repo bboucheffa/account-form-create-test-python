@@ -28,14 +28,12 @@ jobs:
           pip install -r requirements.txt
 
       # Installer Chrome et ses dépendances
-      - name: Install Chrome & dependencies
+      - name: Install Chrome
         run: |
           sudo apt-get update
-          sudo apt-get install -y google-chrome-stable xvfb \
-            wget unzip libnss3 libxss1 libappindicator3-1 fonts-liberation \
-            libasound2t64 libatk1.0-0 libcups2 libgtk-3-0 libx11-xcb1 \
-            libxcomposite1 libxdamage1 libxrandr2 libpangocairo-1.0-0 \
-            libxshmfence1
+          sudo apt-get install -y wget unzip
+          wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
       - name: Run Tests with Xvfb
         run: |
