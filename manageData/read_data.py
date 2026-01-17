@@ -5,7 +5,7 @@ class ReadData:
         self.path = path
 
     def read_Client(self, key):
-        with open(self.path, encoding="uft-8") as f:
-            data = json.loads(f)
+        with open(self.path, encoding="utf-8") as f:
+            data = json.load(f)
 
         return data[key]
