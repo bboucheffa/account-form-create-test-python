@@ -1,0 +1,34 @@
+{
+  "Client1": {
+    "email": "kamel@gmail.com",
+    "name": "kamel",
+    "phone": "0605040302",
+    "adresse": "20 aveue marechal juin",
+    "message": "Hello, je suis kameeeel !"
+  },
+
+  "Client2": {
+    "email": "rezak@gmail.com",
+    "name": "rezak",
+    "phone": "0605040302",
+    "adresse": "20 rue  medecin",
+    "message": "Hello, je suis rezaaaaak !"
+  },
+
+  "Client3": {
+    "email": "badis@gmail.com",
+    "name": "badis",
+    "phone": "0605040302",
+    "adresse": "20 avenue massina",
+    "message": "Hello, je suis badiiiiiiiiis !"
+  },
+
+  "Client4": {
+    "email": "sabrina@gmail.com",
+    "name": "sabrina",
+    "phone": "0605040302",
+    "adresse": "5 rue des maraichers",
+    "message": "Hello, je suis sabrinnnnaaaa !"
+  }
+
+}
