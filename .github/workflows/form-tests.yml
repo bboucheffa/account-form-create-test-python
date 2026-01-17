@@ -42,7 +42,6 @@ jobs:
             unzip \
             xvfb \
             libnss3 \
-            libgconf-2-4 \
             libxss1 \
             libappindicator3-1 \
             fonts-liberation \
