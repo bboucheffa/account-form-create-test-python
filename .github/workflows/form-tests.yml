@@ -28,15 +28,14 @@ jobs:
           pip install -r requirements.txt
           pip install pytest-html
 
-      # Installer Chrome et ses dépendances
-      - name: Install Chrome
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget unzip
-          wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo apt install -y ./google-chrome-stable_current_amd64.deb
+      # Setup Chrome
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+          install-chromedriver: true
 
-      - name: Run Tests with Xvfb
+      - name: Run Tests
         run: |
           pytest -v --disable-warnings --html=report.html --self-contained-html
       #xvfb : “X Virtual Framebuffer”, c’est un serveur X virtuel qui crée un affichage graphique en mémoire.
